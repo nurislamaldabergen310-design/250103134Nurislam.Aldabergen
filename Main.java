@@ -1,9 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        Device light = new SmartLight();
-        AdvancedRemote remote = new AdvancedRemote(light);
+        Radio radio = new Radio();
+        PartyRemote partyRemote = new PartyRemote(radio);
 
-        remote.powerOn();
-        remote.mute();
+        partyRemote.partyMode();
     }
 }
