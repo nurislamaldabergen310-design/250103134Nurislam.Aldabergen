@@ -1,8 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        Radio radio = new Radio();
-        PartyRemote partyRemote = new PartyRemote(radio);
+        Hero knight = new Knight(new Sword());
+        knight.attack();
 
-        partyRemote.partyMode();
+        Hero magicKnight = new Knight(new MagicWand());
+        magicKnight.attack();
     }
 }
