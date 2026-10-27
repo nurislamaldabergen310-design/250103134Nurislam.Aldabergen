@@ -1,9 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        Image img1 = new ProxyImage("salary_sheet.png", "GUEST");
-        Image img2 = new ProxyImage("salary_sheet.png", "ADMIN");
+        Video video = new ProxyVideo("Cat_Memes.mp4");
 
-        img1.show();
-        img2.show();
+        for (int i = 0; i < 3; i++) {
+            video.play();
+            if (i < 2) {
+                System.out.println();
+            }
+        }
     }
 }
