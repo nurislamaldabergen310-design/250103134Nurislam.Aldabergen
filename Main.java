@@ -1,8 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        Internet schoolNet = new SchoolProxyInternet();
+        Device light = new SmartLight();
+        AdvancedRemote remote = new AdvancedRemote(light);
 
-        schoolNet.connectTo("wikipedia.org");
-        schoolNet.connectTo("gaming.com");
+        remote.powerOn();
+        remote.mute();
     }
 }
